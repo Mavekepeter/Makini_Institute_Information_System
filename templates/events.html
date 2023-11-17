@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs" data-aos="fade-in">
+            <div class="container">
+                <h2>Events</h2>
+                <p>Immerse yourself in a vibrant tapestry of intellectual and cultural experiences at Makini University.
+                    Our events showcase a diverse array of activities that cater to the curiosity and interests of our dynamic
+                    community. From thought-provoking lectures by esteemed scholars to hands-on workshops that foster innovation,
+                    each event is carefully crafted to ignite passion and foster collaboration. Engage in lively discussions,
+                    expand your horizons through interactive sessions, and connect with like-minded individuals who share your
+                    enthusiasm for knowledge. Whether it's a stimulating academic symposium, a captivating cultural celebration,
+                    or a career-focused networking event, Makini University events are designed to inspire, challenge,
+                    and enrich the university experience. Join us in the pursuit of knowledge and discovery,
+                    where each event unfolds as a unique opportunity to learn, grow, and build lasting connections.
+                    Elevate your university journey with the dynamic events that define the spirit of Makini University.</p>
+            </div>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Events Section ======= -->
+        <section id="events" class="events">
+            <div class="container" data-aos="fade-up">
+
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{% static 'assets/img/events-1.jpg' %}" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Introduction to webdesign</a></h5>
+                                <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p>
+                                <p class="card-text">Are you curious about the fascinating world of web development? Makini University invites you to embark on a journey into the
+                                    heart of the digital realm with our exclusive event – "Unlocking the Digital World: Introduction to Web Development."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="{% static 'assets/img/events-2.jpg' %}" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="">Marketing Strategies</a></h5>
+                                <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p>
+                                <p class="card-text">Join Us for "Navigating Success: Introduction to Marketing Strategies"
+
+Curious about the dynamic world of marketing strategies? Makini University invites you to a captivating event – "Navigating Success: Introduction to Marketing Strategies."</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- End Events Section -->
+
+    </main><!-- End #main -->
+
+
+
+{% endblock %}
