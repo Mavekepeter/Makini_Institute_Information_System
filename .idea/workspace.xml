@@ -7,7 +7,15 @@
     <list default="true" id="1d124dde-22dc-454a-8b0d-5fd2967e545e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Student_Information_System/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Student_Information_System/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/views.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +129,7 @@
       <workItem from="1700151861979" duration="831000" />
       <workItem from="1700152746907" duration="1720000" />
       <workItem from="1700159996195" duration="1645000" />
-      <workItem from="1700196194731" duration="9720000" />
+      <workItem from="1700196194731" duration="11646000" />
     </task>
     <servers />
   </component>
