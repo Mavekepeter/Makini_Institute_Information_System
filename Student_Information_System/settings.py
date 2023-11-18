@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
+from decouple import config
 
 from django.contrib import staticfiles
 
@@ -130,6 +133,7 @@ CORS_ALLOWED_ORIGINS = [
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'Static']
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -143,3 +147,6 @@ EMAIL_HOST_USER = 'ondeyostephen0@gmail.com'
 EMAIL_HOST_PASSWORD = 'fnfuhomkjtaxqedc'
 EMAIL_USE_TLS = True
 #EMAIL_USE_SSL = False
+
+
+django_heroku.settings(locals())
