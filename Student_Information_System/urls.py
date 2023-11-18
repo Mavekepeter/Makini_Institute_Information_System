@@ -23,6 +23,7 @@ urlpatterns = [
     path('', stephen.home, name='home-url'),
     path('about/', stephen.about, name='about-url'),
     path('course/', stephen.course, name='course-url'),
+    path('course_details/',stephen.course_details,name='course_details-url'),
     path('trainers/', stephen.trainers, name='trainers-url'),
     path('events/', stephen.events, name='events-url'),
     path('pricing/', stephen.pricing, name='pricing-url'),

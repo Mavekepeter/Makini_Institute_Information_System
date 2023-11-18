@@ -1,1 +1,0 @@
-web: gunicorn Student_Information_System.wsgi
