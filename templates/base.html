@@ -56,11 +56,11 @@
                 <li><a href="{% url 'course-url' %}">Courses</a></li>
                 <li><a href="{% url 'trainers-url' %}">Trainers</a></li>
                 <li><a href="{% url 'events-url' %}">Events</a></li>
-                <li><a href="{% url 'pricing-url' %}">Pricing</a></li>
+                <li><a href="{% url 'views_course-url' %}">Pricing</a></li>
 
                 <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
-                        <li><a href="#">Drop Down 1</a></li>
+                        <li><a href="{% url 'add_course-url' %}">Add Course</a></li>
                         <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
                             <ul>
                                 <li><a href="#">Deep Drop Down 1</a></li>
@@ -133,7 +133,8 @@
                     <p>Subscribe To Our Newsletter To Get Any Announcements We Make: </p>
                     <form action="" method="post">
                         {% csrf_token %}
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                        <input  type="email" name="email" ><input type="submit" value="Subscribe">
+
                     </form>
                 </div>
 

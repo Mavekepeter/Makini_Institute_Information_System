@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
-    # 'crispy_bootstrap4',
+    'services',
+    'crispy_bootstrap4',
     # 'corsheaders',
 ]
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap4'
@@ -89,8 +90,12 @@ WSGI_APPLICATION = 'Student_Information_System.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'makini',
+        'USER': 'root',
+        'password': '',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -146,7 +151,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ondeyostephen0@gmail.com'
 EMAIL_HOST_PASSWORD = 'fnfuhomkjtaxqedc'
 EMAIL_USE_TLS = True
-#EMAIL_USE_SSL = False
+# EMAIL_USE_SSL = False
 
 
 django_heroku.settings(locals())

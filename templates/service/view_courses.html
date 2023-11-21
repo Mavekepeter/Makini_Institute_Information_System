@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-lg-3 col-md-6">
+                        <div class="box">
+                            <h3>{{ product.name }} - {{ product.duration }}</h3>
+                            <h4>Ksh. {{ product.price }}<span> / month</span></h4>
+                            <!--<ul>
+                                <li>Aida dere</li>
+                                <li>Nec feugiat nisl</li>
+                                <li>Nulla at volutpat dola</li>
+                                <li class="na">Pharetra massa</li>
+                                <li class="na">Massa ultricies mi</li>
+                            </ul>-->
+                            <p>{{ product.description }}</p>
+                            <div class="btn-wrap">
+                                <a href="/products/buy_course/{{ product.id }}" class="btn-buy">Buy Now</a><br><br>
+                                 <a href="/products/delete_course/{{ product.id }}" class="btn-buy">Delete Course</a><br><br>
+                                <a href="#" class="btn-buy">Update Course</a><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                {% endfor %}
+            </div>
+
+        </div>
+
+    </section><!-- End Pricing Section -->
+{% endblock %}
